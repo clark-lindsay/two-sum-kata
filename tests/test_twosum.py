@@ -14,3 +14,7 @@ class TestTwoSum:
 
     def test_list_of_unique_positive_numbers(self):
         assert(twosum.two_sum(nums=[1, 2, 3, 4, 5], target=9) == [3, 4])
+
+    def test_must_return_unique_indices(self):
+        assert(twosum.two_sum(nums=[3, 3, 3, 3], target=6) != [0, 0])
+        assert(twosum.two_sum(nums=[3, 3, 3, 3], target=6) == [0, 1])
