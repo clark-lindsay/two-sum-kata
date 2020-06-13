@@ -11,3 +11,6 @@ class TestTwoSum:
 
     def test_returns_empty_for_one_number_list(self):
         assert(twosum.two_sum(nums=[1], target=1) == [])
+
+    def test_list_of_unique_positive_numbers(self):
+        assert(twosum.two_sum(nums=[1, 2, 3, 4, 5], target=9) == [3, 4])
